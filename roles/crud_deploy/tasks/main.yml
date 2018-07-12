@@ -7,4 +7,4 @@
     extension: "{{ nexus_extentions }}"
     repository_url: "{{ nexus_repo_url }}"
     dest: "{{ artifact_destination }}"
-
+  tags: deploy

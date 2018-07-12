@@ -6,7 +6,7 @@ jdk_extract_dir: jdk1.8.0_45
 
 ##### Tomcat Details #####
 
-tomcat_version: 8.5.23
+tomcat_version: 8.5.32
 
 http_port: 8080
 ajp_port: 8009
@@ -24,7 +24,7 @@ admin_password: admin
 db_admin_user: dbowner
 db_admin_password: GmiC___465
 db_name: CRUDAPPDB
-db_host: "{{ hostvars['mysql-1'].ansible_host }}"
+db_host: "{{ hostvars['mysql1'].ansible_host }}"
 
 ##### Tomcat Heap Parameters ####
 
@@ -41,7 +41,7 @@ heap_dump_dir: /opt/tomcat/logs/
 ##### Maven_repositopry_details #####
 
 nexus_grp_id: com.crudapp.main
-artifact_name: CRUDAPP
+artifact_name: crudapp
 nexus_extentions: war
-nexus_repo_url: 'http://10.10.0.60:8081/nexus/content/repositories/DEV-CRUDAPP'
+nexus_repo_url: 'http://10.10.0.60:8081/nexus/content/repositories/crudapp'
 artifact_destination: '/opt/tomcat/webapps/crudapp.war'

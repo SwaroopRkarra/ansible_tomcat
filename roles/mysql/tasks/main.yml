@@ -17,11 +17,6 @@
     enabled: 1
     gpgcheck: 0
 
-- name: Update the OS
-  yum: update_cache=yes name=* state=latest
-  tags:
-    - update
-
 - name: Install MySQL Server
   yum: name=mysql-community-server state=present
 
