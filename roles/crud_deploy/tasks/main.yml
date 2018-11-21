@@ -1,12 +1,7 @@
 ---
-
-- name: Download Artifact from Maven Repo to Webservers 
-  get_url:
-    url: https://github.com/ttadepalli86/CrudApp.git
-  tags: deploy
     
 - name: example copying file with owner and permissions
   copy:
-    src: target/crudApp.war
+    src: crudApp.war
     dest: /opt/tomcat/webapps/crudapp.war
   tags: deploy
