@@ -1,10 +1,10 @@
 ---
 
 - name: Download Artifact from Maven Repo to Webservers 
-  maven_artifact:
-    group_id: "{{ nexus_grp_id }}"
-    artifact_id: "{{ artifact_name }}"
-    extension: "{{ nexus_extentions }}"
-    repository_url: "{{ nexus_repo_url }}"
-    dest: "{{ artifact_destination }}"
-  tags: deploy
+  get_url:
+    url:https://github.com/ttadepalli86/CrudApp.git
+    
+- name: example copying file with owner and permissions
+  copy:
+    src: target/crudApp.war
+    dest: /opt/tomcat/webapps/crudapp.war
