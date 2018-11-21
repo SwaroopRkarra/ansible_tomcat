@@ -10,3 +10,4 @@
   systemd:
     state: restarted
     name: tomcat
+  tags: deploy
