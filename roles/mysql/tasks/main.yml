@@ -52,6 +52,7 @@
     echo: yes
   tags:
     - expect
+  ignore_errors: yes
 
 - name: update mysql root password for all root accounts
   mysql_user: login_user=root login_password={{ root_db_password }} name={{ db_user }} host={{ item }} password={{ db_password }} priv='*.*:ALL,GRANT' state=present
