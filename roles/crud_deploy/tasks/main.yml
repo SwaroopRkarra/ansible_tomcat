@@ -5,3 +5,8 @@
     src: crudApp.war
     dest: /opt/tomcat/webapps/crudapp.war
   tags: deploy
+  
+- name: Make sure a service is running
+  systemd:
+    state: restarted
+    name: tomcat
