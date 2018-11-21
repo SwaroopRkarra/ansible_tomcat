@@ -6,7 +6,7 @@ jdk_extract_dir: jdk1.8.0_45
 
 ##### Tomcat Details #####
 
-tomcat_version: 8.5.32
+tomcat_version: 8.5.35
 
 http_port: 8080
 ajp_port: 8009
