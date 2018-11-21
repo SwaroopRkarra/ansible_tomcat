@@ -4,6 +4,8 @@
   copy:
     src: crudApp.war
     dest: /opt/tomcat/webapps/crudapp.war
+    owner: tomcat
+    group: tomcat
   tags: deploy
   
 - name: Make sure a service is running
