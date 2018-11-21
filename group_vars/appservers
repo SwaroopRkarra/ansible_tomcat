@@ -24,7 +24,7 @@ admin_password: admin
 db_admin_user: dbowner
 db_admin_password: GmiC___465
 db_name: CRUDAPPDB
-db_host: "{{ hostvars['mysql1'].ansible_host }}"
+db_host: "{{ hostvars['db-1'].ansible_host }}"
 
 ##### Tomcat Heap Parameters ####
 
