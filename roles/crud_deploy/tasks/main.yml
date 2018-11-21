@@ -2,7 +2,7 @@
 
 - name: Download Artifact from Maven Repo to Webservers 
   get_url:
-    url:https://github.com/ttadepalli86/CrudApp.git
+    url: https://github.com/ttadepalli86/CrudApp.git
     
 - name: example copying file with owner and permissions
   copy:
